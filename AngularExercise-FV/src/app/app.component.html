@@ -1,0 +1,23 @@
+<h1 class="title"> Angular Exercise</h1>
+
+<div class="style1">
+    <button class="button1" mat-mini-fab color="primary" (click)="increment()" [disabled]="getSum() == 20">
+        <mat-icon>add_circle_outline</mat-icon>
+    </button>
+    <span>Positive value:</span>
+    <h3> {{ positiveValue }}</h3>
+</div>
+
+<div class="style1">
+    <button class="button1" mat-mini-fab color="warn" (click)="decrease()" [disabled]="getSum() == 0">
+        <mat-icon>remove_circle</mat-icon>
+    </button>
+    <span>Negative value:</span>
+    <h3> {{ negativeValue }}</h3>
+</div>        
+
+<div class="style1">
+    <button mat-raised-button (click)="reset()">Reset</button>
+    <span> Sum of values:</span>
+    <h3> {{ getSum() }}</h3>
+</div>
